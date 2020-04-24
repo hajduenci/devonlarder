@@ -52,10 +52,40 @@ table {
 html {
     background-image: url(./img/background.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+	background-size: cover;
+	font-family: helvetica, sans-serif;
+	color: seashell;
 }
 
 header {
     height: 110px;
-    background-color:rgb(164, 212, 136)
+	background-color:rgb(164, 212, 136);
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 99;
+	width: 100%;
+}
+
+header img {
+	height: 2.27rem;
+	align-self: center;
+	margin-left: 10px;
+}
+
+nav {
+	margin-right: 100px;
+	align-self: center;
+	padding-right: 10px;
+	width: 900px;
+	justify-content: space-between;
+}
+
+nav p {
+    display: inline-block;
+    text-decoration: underline;
+	padding: 0 50px;
+	font-size: 16px;
+	font-family: 'Overlock', cursive;
 }
