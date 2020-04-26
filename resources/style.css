@@ -142,13 +142,13 @@ section.navbar  {
 
 
 #main {
-	float: right;
-	margin-right: 200px;
+	position: relative;
+	left: 60%;
+	margin-top: 5%;
 }
 
 
 .hours {
-	margin-top: 100px;
 	width: 300px;
 	background-color: white;
 	text-align: center;
@@ -275,7 +275,8 @@ footer p {
 	}
 
 	.logo img {
-		width: 320px;
+		width: 300px;
+		padding-bottom: 5px;
 	}
 
 	.desktop {
@@ -284,18 +285,15 @@ footer p {
 
 	.header {
 		display: flex;
-		justify-content: space-around;
 		flex-wrap: wrap;
+		justify-content: space-evenly;
 		background-color: rgb(164, 212, 136);
 		box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-		position: fixed;
-		width: 100%;
-		z-index: 3;
 	  }
+
 	  
 	  .header ul {
-		display: flex;
-		flex-direction: column;
+		min-width: 375px;
 		margin: 0;
 		padding: 0;
 		list-style: none;
@@ -304,13 +302,11 @@ footer p {
 	  }
 	  
 	  .header li a {
-		text-align: end;
-		flex-grow: 3;
-		width: 400px;
 		font-family: 'Overlock', sans-serif;
 		text-transform: uppercase;
 		color: white;
 		display: block;
+		text-align: end;
 		padding: 20px 0px;
 		text-decoration: none;
 	  }
@@ -329,7 +325,7 @@ footer p {
 	  .header .menu-icon {
 		align-self: center;
 		cursor: pointer;
-		padding: 28px 20px;
+		padding: 28px 0px;
 		user-select: none;
 	  }
 
@@ -389,8 +385,13 @@ footer p {
 
 
 	#main {
-		margin: 200px 100px 200px 100px;
-		
+		position: fixed;
+		left: 22%;
+		margin-top: 10%;
+	}
+
+	footer {
+		bottom: 0;
 	}
 
 
