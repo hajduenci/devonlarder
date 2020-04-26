@@ -69,7 +69,11 @@ body {
 }
 
 
-/*navbar*/
+/*navbar desktop*/
+
+.mobile {
+	display: none;
+}
 
 section.navbar  {
 	height: 110px;
@@ -134,7 +138,37 @@ section.navbar  {
 } 
 
 
-/*navbar end*/
+/*navbar desktop end*/
+
+/*navbar mobile*/
+
+@media only screen and (max-width: 600px) {
+	.logo {
+		color: red;
+		padding-top: 2%;
+
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: flex;
+		background-color: rgb(164, 212, 136);
+		justify-content: space-around;
+		align-content: center;
+	}
+
+	#menu {
+		align-self: center;
+	}
+
+	}
+
+/*navbar mobile end*/
+
+
 
 #main {
 	float: right;
