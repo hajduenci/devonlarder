@@ -65,7 +65,6 @@ body {
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
-	color: seashell;
 }
 
 
@@ -140,34 +139,6 @@ section.navbar  {
 
 /*navbar desktop end*/
 
-/*navbar mobile*/
-
-@media only screen and (max-width: 600px) {
-	.logo {
-		color: red;
-		padding-top: 2%;
-
-	}
-
-	.desktop {
-		display: none;
-	}
-
-	.mobile {
-		display: flex;
-		background-color: rgb(164, 212, 136);
-		justify-content: space-around;
-		align-content: center;
-	}
-
-	#menu {
-		align-self: center;
-	}
-
-	}
-
-/*navbar mobile end*/
-
 
 
 #main {
@@ -230,6 +201,7 @@ section.navbar  {
 }
 
 .social {
+	color: white;
 	display: flex;
 	justify-content: center;
 	width: 300px;
@@ -260,7 +232,6 @@ section.navbar  {
 }
 
 
-
 /*footer start*/
 
 footer {
@@ -288,7 +259,144 @@ footer h3 {
 
 footer p {
 	font-family: 'Overlock', sans-serif;
+	color: white;
 	font-size: 12px;
 }
 
 /*footer end*/
+
+/*navbar mobile*/
+
+@media only screen and (max-width: 600px) {
+	.logo {
+		font-size: 30px;
+		display: flex;
+		padding-top: 2%;
+	}
+
+	.logo img {
+		width: 320px;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.header {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		background-color: rgb(164, 212, 136);
+		box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+		position: fixed;
+		width: 100%;
+		z-index: 3;
+	  }
+	  
+	  .header ul {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		overflow: hidden;
+		background-color: rgb(164, 212, 136);
+	  }
+	  
+	  .header li a {
+		text-align: end;
+		flex-grow: 3;
+		width: 400px;
+		font-family: 'Overlock', sans-serif;
+		text-transform: uppercase;
+		color: white;
+		display: block;
+		padding: 20px 0px;
+		text-decoration: none;
+	  }
+	  
+	  .header li a:hover {
+		background-color: rgb(164, 212, 136);
+	  }
+	  
+	  
+	  .header .menu {
+		clear: both;
+		max-height: 0;
+		transition: max-height .2s ease-out;
+	  }
+	
+	  .header .menu-icon {
+		align-self: center;
+		cursor: pointer;
+		padding: 28px 20px;
+		user-select: none;
+	  }
+
+	  
+	  .header .menu-icon .navicon {
+		background: white;
+		display: block;
+		height: 2px;
+		position: relative;
+		transition: background-color .2s ease-out;
+		width: 28px;
+	  }
+	  
+	  .header .menu-icon .navicon:before,
+	  .header .menu-icon .navicon:after {
+		background: white;
+		content: '';
+		display: block;
+		height: 100%;
+		position: absolute;
+		transition: all .2s ease-out;
+		width: 100%;
+	  }
+	  
+	  .header .menu-icon .navicon:before {
+		top: 8px;
+	  }
+	  
+	  .header .menu-icon .navicon:after {
+		top: -8px;
+	  }
+	
+	  .header .menu-btn {
+		display: none;
+	  }
+	  
+	  .header .menu-btn:checked ~ .menu {
+		max-height: 240px;
+	  }
+	  
+	  .header .menu-btn:checked ~ .menu-icon .navicon {
+		background: transparent;
+	  }
+	  
+	  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+		transform: rotate(-45deg);
+	  }
+	  
+	  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+		transform: rotate(45deg);
+	  }
+	  
+	  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+	  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+		top: 0;
+	  }
+
+
+	#main {
+		margin: 200px 100px 200px 100px;
+		
+	}
+
+
+
+	}
+
+/*navbar mobile end*/
+
+
