@@ -430,6 +430,7 @@ footer p {
 		max-width: 930px;
 		width: 100%;
 		padding: 0 20px 90px 20px;
+		color: #6B3B17;
 
 	}
 
@@ -495,8 +496,9 @@ footer p {
 	display: flex;
 	flex-wrap: wrap;
 	background-color: white;
-	margin: 20px 7vw;
+	margin: 20px 7vw 50px 7vw;
 	padding: 0 20px 50px 20px;
+	color: #6B3B17;
 
 }
 
@@ -534,13 +536,13 @@ footer p {
 	color: rgb(164, 212, 136);
 	padding-bottom: 10px;
 	padding-top: 8vh;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid #6B3B17;
 }
 
 .menuitem {
 	min-width: 100%;
 	padding: 20px 0px;
-	background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+	background-image: linear-gradient(to right, #6B3B17 33%, rgba(255,255,255,0) 0%);
 	background-position: bottom;
 	background-size: 6px 2px;
 	background-repeat: repeat-x;
@@ -603,9 +605,9 @@ footer p {
   .row .dots {
 	display: block;
 	margin: 0px 4px;
-	background: -webkit-radial-gradient(50% 50%, circle, black 12%, transparent 15%);
-	background: -moz-radial-gradient(50% 50%, circle, black 12%, transparent 15%);
-	background: radial-gradient(circle at 50% 50%, black 12%, transparent 15%);
+	background: -webkit-radial-gradient(50% 50%, circle, #6B3B17 12%, transparent 15%);
+	background: -moz-radial-gradient(50% 50%, circle, #6B3B17 12%, transparent 15%);
+	background: radial-gradient(circle at 50% 50%, #6B3B17 12%, transparent 15%);
 	background-size: 0.5em 0.5em;
 	background-position: 0 1em;
 	background-repeat: repeat-x;
@@ -622,8 +624,66 @@ footer p {
 	order: 2;
   }
 
+  @media only screen and (min-width: 600px) {
+
+	.menuitem {
+		min-width: 50%;
+	}
+  }
+
+  @media only screen and (min-width: 900px) {
+
+	.menuitem {
+		min-width: 33%;
+		max-width: 300px;
+	}
+
+	#menucontentbox {
+		max-width: 950px;
+		margin: 20px auto;
+
+	}
+
+	#menucontentbox .contenttop {
+		padding-bottom: 0;
+	}
+
+
+
+  }
+
+
 /*menu end*/
 
+/*contact start*/
 
+.contactdetails h2 {
+	font-family: Niconne, serif;
+	font-size: 26px;
+	padding-bottom: 3px;
+}
+
+.contactdetails p {
+	font-family: Overlock, sans-serif;
+	font-size: 16px;
+	padding: 3px 0;
+}
+
+#map {
+	padding-top: 30px;
+	margin-top: 10px;
+	height: 280px;
+	width: 100%;
+}
+
+@media only screen and (min-width: 900px) {
+
+	#map {
+		height:400px;
+	}
+  }
+
+
+/*contact end*/
 
 
