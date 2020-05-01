@@ -676,6 +676,10 @@ footer p {
 	width: 100%;
 }
 
+#content {
+	font-size: 14px;
+}
+
 
     /* The popup bubble styling. */
 	.popup-bubble {
