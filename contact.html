@@ -78,6 +78,8 @@
 
             <script>
 
+                var map, popup, Popup; //new!!
+
 
                 // Initialize and add the map
                 function initMap() {
@@ -87,32 +89,20 @@
                   var map = new google.maps.Map(
                       document.getElementById('map'), {zoom: 18, center: shop, disableDefaultUI: true, 
                         styles: [
-
-            {featureType: 'poi.business', stylers: [{visibility: 'off'}]},
-            ]
-                      
-                      
-                      }, 
-                      );
+                        {featureType: 'poi.business', stylers: [{visibility: 'off'}]},
+                        ]},);
 
 
 
-                      
+
                   // The marker, positioned 
                   var marker = new google.maps.Marker({position: shop, map: map});
                 }
-
-                
-
-
             </script>
     
             <script async defer
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1XJ8Y-LwAQWhVqglRbHAJLtIobHvrcyw&callback=initMap">
             </script>
-
-            
-
 
         </div>
 
