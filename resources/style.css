@@ -494,6 +494,7 @@ footer p {
 
 #menucontentbox {
 	display: flex;
+	justify-content: space-around;
 	flex-wrap: wrap;
 	background-color: white;
 	margin: 20px 7vw 50px 7vw;
@@ -535,23 +536,42 @@ footer p {
 	font-size: 30px;
 	color: rgba(15, 168, 161, 1);
 	padding-bottom: 10px;
-	padding-top: 8vh;
+	padding-top: 4vh;
 	border-bottom: 2px solid #6B3B17;
 }
 
-.menuitem {
-	min-width: 100%;
-	padding: 20px 0px;
+/*
+.separator {
+	color: white;
+	width: 100%;
 	background-image: linear-gradient(to right, #6B3B17 33%, rgba(255,255,255,0) 0%);
 	background-position: bottom;
 	background-size: 6px 2px;
 	background-repeat: repeat-x;
+}
+*/
+
+.menuitem {
+	min-width: 100%;
+	padding: 20px 0px;
+	/* dotted line
+	background-image: linear-gradient(to right, #6B3B17 33%, rgba(255,255,255,0) 0%);
+	background-position: bottom;
+	background-size: 6px 2px;
+	background-repeat: repeat-x;
+	*/
 }
 
 .menuitem h2 {
 	font-family: overlock, sans-serif;
 	font-size: 18px;
 	padding: 10px 0;
+}
+
+.menuitem h3 {
+	font-family: overlock, sans-serif;
+	font-size: 16px;
+	padding: 2px 0;
 }
 
 .menuitem .price {
@@ -634,12 +654,12 @@ footer p {
   @media only screen and (min-width: 900px) {
 
 	.menuitem {
-		min-width: 33%;
+		min-width: 45%;
 		max-width: 300px;
 	}
 
 	#menucontentbox {
-		max-width: 950px;
+		max-width: 850px;
 		margin: 20px auto;
 
 	}
