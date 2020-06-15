@@ -677,10 +677,18 @@ footer p {
 
 /*contact start*/
 
+
 .contactdetails h2 {
+	margin-right: auto;
+	align-self: baseline;
 	font-family: Niconne, serif;
 	font-size: 26px;
 	padding-bottom: 3px;
+}
+
+.contactdetails2 {
+	flex-grow: 10;
+	color: white;
 }
 
 .contactdetails p {
